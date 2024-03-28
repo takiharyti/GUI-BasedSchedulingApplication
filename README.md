@@ -7,19 +7,19 @@
 
 #### Version: 1.0.1
 
-#Purpose
+### Purpose
 *** ***:Advanced Java Software Development. Create a Graphics User Interface desktop application using java 
 to act as a scheduling application for a global consulting organization. The application must consistently create, 
 modify, and delete data from the organizations SQL Database while maintaining specific business requirements.
 
-#Directions To Run
+### Directions To Run
 Make changes in util.JDBC class. Match the jdbcUrl, userName, and password to fit your database settings.
 
 Make sure your JDK, JavaFX, and MySQL paths are updated.
 
 Run 'Main', or press Shift F10 for the intellij shortcut.
 
-#IDE
+### IDE
 IntelliJ IDEA 2021.1.3 (Community Edition)
 Build #IC-211.7628.21, built on June 30, 2021
 Runtime version: 11.0.11+9-b1341.60 amd64
@@ -35,7 +35,7 @@ JavaFX 11.0.2
 
 MySQL Connector Java 8.0.25
 
-#Features and Skills Used
+### Features and Skills Used
 * Creation of a GUI with multiple, user-friendly, stages.
 * Input Validation, implementing logical error checks and displaying accurate alerts to the user.
 * Log-in form with logging capabilities.
@@ -47,7 +47,7 @@ local time to the user interface.
 * Lambda Expressions.
 * Language localization properties using Resource Bundles.
 
-# Reports
+### Reports
 * User Name
 * User ID
 * Last Update
