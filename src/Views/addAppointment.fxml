@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="440.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddAppointment">
+    <Button fx:id="addButton" layoutX="14.0" layoutY="404.0" mnemonicParsing="false" onAction="#addButtonClicked" text="Add" />
+    <Button fx:id="cancelButton" layoutX="834.0" layoutY="404.0" mnemonicParsing="false" onAction="#cancelButtonClicked" text="Cancel" />
+    <Label layoutX="314.0" layoutY="77.0" text="Appointment ID" />
+    <Label layoutX="314.0" layoutY="104.0" text="Title" />
+    <Label layoutX="314.0" layoutY="131.0" text="Description" />
+    <Label layoutX="314.0" layoutY="158.0" text="Location" />
+    <Label layoutX="314.0" layoutY="212.0" text="Type" />
+    <Label layoutX="314.0" layoutY="239.0" text="Date" />
+    <Label layoutX="314.0" layoutY="266.0" text="Start (HH:MM)" />
+    <TextField fx:id="titleText" layoutX="437.0" layoutY="100.0" />
+    <TextField fx:id="appointmentId" disable="true" layoutX="437.0" layoutY="73.0" />
+    <TextField fx:id="descriptionText" layoutX="437.0" layoutY="127.0" />
+    <TextField fx:id="locationText" layoutX="437.0" layoutY="154.0" />
+    <TextField fx:id="typeText" layoutX="437.0" layoutY="208.0" />
+    <ComboBox fx:id="userIdCombo" layoutX="437.0" layoutY="343.0" prefWidth="150.0" />
+    <ComboBox fx:id="customerIdCombo" layoutX="437.0" layoutY="316.0" prefWidth="150.0" />
+    <DatePicker fx:id="dateDatePicker" editable="false" layoutX="437.0" layoutY="235.0" prefHeight="25.0" prefWidth="149.0" />
+    <Label layoutX="314.0" layoutY="293.0" text="End (HH:MM)" />
+    <Spinner fx:id="startMinuteSpinner" layoutX="514.0" layoutY="262.0" prefHeight="25.0" prefWidth="72.0">
+        <valueFactory>
+            <SpinnerValueFactory.IntegerSpinnerValueFactory amountToStepBy="1" initialValue="0" max="59" min="0" />
+        </valueFactory>
+    </Spinner>
+    <Spinner fx:id="startHourSpinner" layoutX="437.0" layoutY="262.0" prefHeight="25.0" prefWidth="72.0">
+        <valueFactory>
+            <SpinnerValueFactory.IntegerSpinnerValueFactory amountToStepBy="1" initialValue="8" max="23" min="0" />
+        </valueFactory>
+    </Spinner>
+    <Spinner fx:id="endMinuteSpinner" layoutX="514.0" layoutY="289.0" prefHeight="25.0" prefWidth="72.0">
+        <valueFactory>
+            <SpinnerValueFactory.IntegerSpinnerValueFactory amountToStepBy="1" initialValue="0" max="59" min="0" />
+        </valueFactory>
+    </Spinner>
+    <Spinner fx:id="endHourSpinner" layoutX="437.0" layoutY="289.0" prefHeight="25.0" prefWidth="72.0">
+        <valueFactory>
+            <SpinnerValueFactory.IntegerSpinnerValueFactory amountToStepBy="1" initialValue="14" max="23" min="0" />
+        </valueFactory>
+    </Spinner>
+    <Label layoutX="314.0" layoutY="185.0" text="Contact" />
+    <Label layoutX="314.0" layoutY="320.0" text="Customer ID" />
+    <Label layoutX="314.0" layoutY="347.0" text="User ID" />
+   <ComboBox fx:id="contactCombo" layoutX="437.0" layoutY="181.0" prefWidth="150.0" />
+</AnchorPane>

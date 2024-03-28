@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="440.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Reports">
+   <Button fx:id="typeButton" layoutX="14.0" layoutY="404.0" mnemonicParsing="false" onAction="#typeButtonClicked" text="Type" />
+   <Button fx:id="monthButton" layoutX="61.0" layoutY="404.0" mnemonicParsing="false" onAction="#monthButtonClicked" text="Month" />
+   <Button fx:id="contactsScheduleButton" layoutX="118.0" layoutY="404.0" mnemonicParsing="false" onAction="#contactsScheduleButtonClicked" text="Contacts Schedule" />
+   <TextArea fx:id="reportTextArea" editable="false" layoutX="62.0" layoutY="64.0" prefHeight="286.0" prefWidth="762.0" promptText="Click a report method down below" />
+   <Button fx:id="userButton" layoutX="237.0" layoutY="404.0" mnemonicParsing="false" onAction="#userButtonClicked" text="Users" />
+   <Button fx:id="cancelButton" layoutX="834.0" layoutY="404.0" mnemonicParsing="false" onAction="#cancelButtonClicked" text="Cancel" />
+</AnchorPane>
